@@ -50,14 +50,14 @@ namespace GameSalesWebsiteDemo.Data
             {
                 Id = PCId,
                 PCOSName = "Windows",
-                PlatformId = platforms[0]
+                PlatformId = new List<Platforms> {platforms[0] }
             });
             increaseId.GeneratingId(ref PCId);
 
             personalComputers.Add(new PersonalComputerPlatform()
             {
                 PCOSName = "MacOS",
-                PlatformId = platforms[0]
+                PlatformId = new List<Platforms> { platforms[0] }
             });
             increaseId.GeneratingId(ref PCId);
             #endregion
@@ -67,7 +67,7 @@ namespace GameSalesWebsiteDemo.Data
             {
                 Id = consoleId,
                 ConsoleName = "Play Station",
-                PlatformId = platforms[1]
+                PlatformId = new List<Platforms> { platforms[1] }
             });
             increaseId.GeneratingId(ref consoleId);
 
@@ -75,7 +75,7 @@ namespace GameSalesWebsiteDemo.Data
             {
                 Id = consoleId,
                 ConsoleName = "Nintendo",
-                PlatformId = platforms[1]
+                PlatformId = new List<Platforms> { platforms[1] }
             });
             increaseId.GeneratingId(ref consoleId);
             #endregion
@@ -85,7 +85,7 @@ namespace GameSalesWebsiteDemo.Data
             {
                 Id = mobileId,
                 MobilOSName = "Android",
-                PlatformId = platforms[2]
+                PlatformId = new List<Platforms> { platforms[2] }
             });
             increaseId.GeneratingId(ref mobileId);
 
@@ -93,7 +93,7 @@ namespace GameSalesWebsiteDemo.Data
             {
                 Id = mobileId,
                 MobilOSName = "IOS",
-                PlatformId = platforms[2]
+                PlatformId = new List<Platforms> { platforms[2] }
             });
             increaseId.GeneratingId(ref mobileId);
             #endregion

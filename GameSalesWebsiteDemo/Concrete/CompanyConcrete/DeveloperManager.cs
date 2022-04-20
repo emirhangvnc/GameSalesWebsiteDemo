@@ -13,7 +13,7 @@ namespace GameSalesWebsiteDemo.Concrete.CompanyConcrete
         }
         public void Update(Developer developer)
         {
-            var obj = CompanyData.developers.Where(d => d.Id == developer.Id);
+            var obj = CompanyData.developers.Where(p => p.Id == developer.Id);
             obj.First().CityId = developer.CityId;
             obj.First().DeveloperName = developer.DeveloperName;
         }
